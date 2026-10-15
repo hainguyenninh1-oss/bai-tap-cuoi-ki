@@ -7,19 +7,19 @@ StayFlow là giao diện web mô phỏng việc phối hợp các yêu cầu d�
 - **Học phần:** Phát triển ứng dụng Web cơ bản — CSE122
 - **Đề tài:** StayFlow — hệ thống phối hợp yêu cầu dịch vụ trong khách sạn
 - **Trang thực hiện:** Theo dõi SLA
-- **Sinh viên:** `[Họ và tên]`
-- **Mã sinh viên:** `[SVxx]`
+- **Sinh viên:** `[Nguyễn Ninh Hải]`
+- **Mã sinh viên:** `[]`
 - **Mục đích:** Giúp quản lý theo dõi hạn xử lý dịch vụ, nhận biết yêu cầu sắp đến hạn hoặc quá hạn, lọc danh sách và phân công nhân viên.
 
 ## Liên kết
 
 Điền các liên kết thật trước khi nộp:
 
-- **Figma:** `[Dán link thiết kế Figma tại đây]`
-- **GitHub:** `[Dán link repository cá nhân tại đây]`
-- **Video trình bày:** `[Dán link video đã upload lên channel của học phần]`
+- **Figma:** [https://www.figma.com/design/WyFbVAgrJPYtl8MpHxJd6m/Untitled?node-id=3-23548&t=yi9qdvUmRQiGO8zm-1]
+- **GitHub:** [https://github.com/hainguyenninh1-oss/bai-tap-cuoi-kiy]
+- **Video trình bày:** [https://youtu.be/pCJ5neBnrNo]
 
-Tên video theo định dạng yêu cầu: `CSE122-GK-SVxx-TenSinhVien-TheoDoiSLA`.
+
 
 ## Chức năng của trang
 
@@ -30,7 +30,7 @@ Tên video theo định dạng yêu cầu: `CSE122-GK-SVxx-TenSinhVien-TheoDoiSL
 - Hiển thị thời gian còn lại và trạng thái xử lý.
 - Phân công hoặc điều phối lại yêu cầu cho nhân viên đang trực.
 - Mô phỏng thao tác nhắc nhân viên và ghi lại hoạt động.
-- Xuất danh sách đang hiển thị thành tệp CSV.
+- Xuất workbook Excel `.xlsx` gồm sheet tổng quan và sheet chi tiết có bộ lọc, cố định tiêu đề và màu trạng thái.
 
 ## Công nghệ
 
@@ -39,7 +39,7 @@ Tên video theo định dạng yêu cầu: `CSE122-GK-SVxx-TenSinhVien-TheoDoiSL
 - JavaScript thuần: DOM, event handling, lọc dữ liệu và render giao diện
 - JSON làm dữ liệu mẫu
 - `localStorage` lưu các thay đổi trong trình duyệt
-- Google Fonts: Inter và Noto Serif
+- ExcelJS 4.4.0 qua CDN để tạo workbook Excel trong trình duyệt
 
 ## Chạy trang
 
@@ -77,7 +77,7 @@ hai-file/
 
 - [`pages/manager-sla-monitor.html`](pages/manager-sla-monitor.html) nạp stylesheet và các script cho trang.
 - [`css/manager-admin.css`](css/manager-admin.css) định dạng khung trang, thẻ chỉ số, biểu đồ, bảng và bố cục responsive.
-- [`js/manager-sla-monitor.js`](js/manager-sla-monitor.js) tính và hiển thị chỉ số, vẽ biểu đồ, lọc bảng, xử lý phân công, nhắc việc và xuất CSV.
+- [`js/manager-sla-monitor.js`](js/manager-sla-monitor.js) tính và hiển thị chỉ số, vẽ biểu đồ, lọc bảng, xử lý phân công, nhắc việc và xuất workbook Excel.
 - [`js/manager-admin.js`](js/manager-admin.js) cung cấp khung giao diện dùng chung, tải dữ liệu, lưu `localStorage`, tìm kiếm, hộp thoại và thông báo.
 - [`data/stayflow.mock.json`](data/stayflow.mock.json) chứa dữ liệu mẫu của ứng dụng.
 
@@ -90,6 +90,7 @@ CSS dùng Grid để sắp xếp các thẻ chỉ số, Flexbox cho các nhóm c
 - Dữ liệu ban đầu được đọc từ `data/stayflow.mock.json`.
 - Các thay đổi được lưu trong `localStorage` của trình duyệt hiện tại; không đồng bộ giữa các thiết bị.
 - Đây là sản phẩm frontend mô phỏng, chưa có backend hoặc cơ sở dữ liệu máy chủ.
+- Tính năng xuất Excel cần kết nối Internet để tải ExcelJS từ CDN.
 - Biểu đồ theo giờ sử dụng dữ liệu minh họa; chỉ số SLA là phép tính đơn giản trên dữ liệu mẫu.
 - Thao tác nhắc nhân viên chỉ hiển thị thông báo trong giao diện, không gửi tin nhắn thật.
 - Gợi ý AI và các nội dung liên quan là dữ liệu mô phỏng, không gọi AI API.

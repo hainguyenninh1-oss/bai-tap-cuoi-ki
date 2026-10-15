@@ -1,4 +1,3 @@
-// StayFlow – phần dùng chung cho Quản lý + Quản trị (SV1): dữ liệu, khung trang, toast, hộp thoại.
 const SF = {
   NOW0: new Date("2026-10-06T20:30:00").getTime(), T0: Date.now(), q: "",
   now: () => SF.NOW0 + Date.now() - SF.T0, // đồng hồ giả lập khớp dữ liệu mẫu
