@@ -7,8 +7,8 @@ StayFlow là giao diện web mô phỏng việc phối hợp các yêu cầu d�
 - **Học phần:** Phát triển ứng dụng Web cơ bản — CSE122
 - **Đề tài:** StayFlow — hệ thống phối hợp yêu cầu dịch vụ trong khách sạn
 - **Trang thực hiện:** Theo dõi SLA
-- **Sinh viên:** `[Họ và tên]`
-- **Mã sinh viên:** `[SVxx]`
+- **Sinh viên:** Nguyễn Ninh Hải
+- **Mã sinh viên:** 2551060609
 - **Mục đích:** Giúp quản lý theo dõi hạn xử lý dịch vụ, nhận biết yêu cầu sắp đến hạn hoặc quá hạn, lọc danh sách và phân công nhân viên.
 
 ## Liên kết
@@ -16,7 +16,6 @@ StayFlow là giao diện web mô phỏng việc phối hợp các yêu cầu d�
 Điền các liên kết thật trước khi nộp:
 
 - **Figma:** `[Dán link thiết kế Figma tại đây]`
-- **GitHub:** `[Dán link repository cá nhân tại đây]`
 - **Video trình bày:** `[Dán link video đã upload lên channel của học phần]`
 
 Tên video theo định dạng yêu cầu: `CSE122-GK-SVxx-TenSinhVien-TheoDoiSLA`.
